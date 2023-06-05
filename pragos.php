@@ -45,8 +45,8 @@ while (true) {
   // Cek apakah URL berhasil dibuka selama 3 detik
   if ($response !== false) {
     $count++;
-    echo "URL berhasil dibuka selama 3 detik. URL: " . $url . "\n";
-    echo "Jumlah URL yang telah dibuka: " . $count . "\n";
+    echo "\033[0;32m -- " . $url . "\033[0m\n";
+    echo "[" . $count . "]\n";
   } else {
     echo "Gagal membuka URL. URL: " . $url . "\n";
   }
